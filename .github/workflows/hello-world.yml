@@ -16,3 +16,9 @@ jobs:
         run: echo "Hello World from GitHub Actions!"
       - name: Print Custom Message
         run: echo "Hello, ${{ github.actor }}! This is your first GitHub Action."
+      - name: Print Environment Variables
+        run: env
+      - name: Use Secret Message
+        run: echo "The secret message is:/ ${{ secrets.MY_SECRET_MESSAGE }}"
+      
+      
